@@ -21,8 +21,7 @@ read confirm
 if [ "$confirm" == "YES" ]; then
     echo -e "\nOK, let's do this then."
     echo -e "\n\nGetting the config template..."
-    wget -q https://hatto.dev/res/phonetemplate.xml
-    wget -q https://hatto.dev/res/cisco_dialplan.xml
+    wget -q https://hatto.dev/res/phonetemplate.xml && wget -q https://hatto.dev/res/cisco_dialplan.xml
     echo -e "Doing some magic..."
     sed -i "s/PBXIP/$pbxip/g" ./phonetemplate.xml && sed -i "s/PBXPORT/$pbxport/g" ./phonetemplate.xml && sed -i "s/EXTNUM/$extnum/g" ./phonetemplate.xml && sed -i "s/EXTPASS/$extpw/g" ./phonetemplate.xml && sed -i "s/PHONELABEL/$phonelabel/g" ./phonetemplate.xml
     mv phonetemplate.xml SEP$mac.cnf.xml
