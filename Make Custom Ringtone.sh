@@ -8,7 +8,7 @@ read opt
 if [ "$opt" == "1" ]; then
     echo -e "You have selected Local file. Enter the file path. If it's in the same directory you're in, just type the filename."
     read inputfile
-    echo -e "Type the name of the ringtone file."
+    echo -e "Type the name of the ringtone file, without the file extension."
     read outname
     sox $inputfile -t raw -r 8000 -e mu-law -c 1 $outname.raw
     echo -e "Your ringtone file has been saved to $outname.raw"
