@@ -1,5 +1,5 @@
 #!/bin/bash
-# This script generates a SIP Config File for Cisco phones.
+# This script generates a SIP Config File for Cisco phones. I get it's not exactly SCCP-related, but still useful.
 
 echo -e "Welcome to the SIP Config Generator for Cisco phones. Ensure you have made an extension and configured everything beforehand. If you need help watch the guide at https://hatl.ink/ciscofreepbxvid"
 echo -e "\nFirst, enter your phone's MAC Address. It's 12 characters and can be found on the back label or in your phone settings > Network Configuration"
