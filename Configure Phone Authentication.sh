@@ -4,7 +4,7 @@
 ip=`hostname  -I | cut -f1 -d' '`
 
 echo Getting the PHP file...
-wget https://hatto.dev/res/authentication.txt
+wget -q https://hatto.dev/res/authentication.txt
 echo Configuring...
 [ -d "/var/www/html/cisco_menu" ] && cp ./authentication.txt /var/www/html/cisco_menu/authentication.php || mkdir /var/www/html/cisco_menu && cp ./authentication.txt /var/www/html/cisco_menu/authentication.php
 rm -f ./authentication.txt
