@@ -1,0 +1,6 @@
+#!/bin/bash
+# This script generates a SIP Config File for Cisco 7900s.
+
+echo -e "Please enter your phone's MAC Address: "
+read mac
+echo -e "Your phone's MAC Address is $mac"
