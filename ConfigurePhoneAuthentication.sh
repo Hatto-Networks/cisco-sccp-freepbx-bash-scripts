@@ -1,8 +1,6 @@
 #!/bin/bash
 # This script will add a php file to /var/www/html/cisco_menu which just returns AUTHORIZED to the phone when the phone asks for login when doing HTTP stuff, like /CGI/Screenshot.
-
 ip=`hostname  -I | cut -f1 -d' '`
-
 echo Getting the PHP file...
 wget -q https://hatto.dev/res/authentication.txt
 echo Configuring...
