@@ -4,7 +4,7 @@
 
 echo -e "Welcome to the Cisco Ringtone maker. The file you want to convert must be a WAV file and under 15 seconds."
 echo -e "\n\nWhere is your input file at?\n\nA. Local file\nB. On a web server\n\nType an option..."
-read $opt
+read opt
 if [ "$opt" == "A" ]; then
     echo -e "You have selected Local file. Enter the file path. If it's in the same directory you're in, just type the filename."
     read inputfile
