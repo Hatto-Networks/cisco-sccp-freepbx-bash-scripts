@@ -30,6 +30,3 @@ else
     echo -e "\nYou have not confirmed. Please run the script again."
     exit
 fi
-
-
-
