@@ -1,5 +1,5 @@
 #!/bin/bash
-# This script will add a php file to /var/www/html/cisco_menu which just returns AUTHORIZED to the phone when sending HTTP requests to the phone, like /CGI/Screenshot.
+# This script will add a php file to /var/www/html/cisco_menu which just returns AUTHORIZED to the phone when the phone asks for login when doing HTTP stuff, like /CGI/Screenshot.
 
 ip=`hostname  -I | cut -f1 -d' '`
 
