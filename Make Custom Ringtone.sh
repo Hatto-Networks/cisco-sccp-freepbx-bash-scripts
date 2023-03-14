@@ -14,7 +14,7 @@ if [ "$opt" == "1" ]; then
     echo -e "Your ringtone file has been saved to $outname.raw"
     exit
 elif [ "$opt" == "2" ]; then
-    echo -e "You have selected Web server. Type the full address of the file name. Example: https://hatto.dev/res/sound.wav"
+    echo -e "You have selected Web server. Type the full URL of the file. Example: https://hatto.dev/res/sound.wav"
     read weburl
     wget -q $weburl
     echo -e "Type the name of the ringtone file, without the file extension."
