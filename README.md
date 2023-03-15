@@ -7,3 +7,5 @@ You can use these scripts by using
 Don't have git on your FreePBX? Install it with `yum install git`
 
 To run a script, use `bash <script name>.sh`
+
+If you need support, join the Telefreunde Discord Server at https://telefreunde.tel
