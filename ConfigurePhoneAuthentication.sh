@@ -3,10 +3,10 @@
 ip=`hostname -I | cut -f1 -d' '`
 
 echo -e "Getting the PHP file..."
-wget -q http://hatto.dev/res/authentication.txt
+wget -q https://hatto.dev/res/authentication.txt
 echo Configuring...
 [ -d "/var/www/html/cisco_menu" ] && cp ./authentication.txt /var/www/html/cisco_menu/authentication.php || mkdir /var/www/html/cisco_menu && cp ./authentication.txt /var/www/html/cisco_menu/authentication.php
 rm -f ./authentication.txt
 echo -e "\nAlright, my job's done. Now what you gotta do is go to your FreePBX dashboard, navigate to Sccp Connectivity > Server Config > SCCP Device URL, then paste the following:\n\n"
-echo -e "https://$ip/cisco_menu/authentication.php"
+echo -e "http://$ip/cisco_menu/authentication.php"
 echo -e "\n\ninto Phone authentication URL(NOT Phone Secure authentication URL). After that remake your config files(Phones Manager, select all devices, Create CNF) and restart your Asterisk and phones."
